@@ -98,10 +98,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,6 +142,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -760,9 +763,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      animals_19: 5305343351223448175
+      animals_10: 6284572508141158567
+      animals_21: -5572966852987524704
+      animals_25: 9018698144469868806
+      animals_20: 1824422802616795261
+      animals_8: -953346549932427826
+      animals_14: -1601326401201788047
+      animals_7: 7913660522167358954
+      animals_15: -1108939863998677119
+      animals_6: 6591381469864738340
+      animals_11: -3482606926889630891
+      animals_16: -8111778111241485788
+      animals_0: -10524483601426386
+      animals_5: 3277387584969892780
+      animals_17: 446962508067046564
+      animals_9: 3691526897687444597
+      animals_3: 8133266208652056809
+      animals_13: 3117204224443578919
+      animals_4: 8297040362687464060
+      animals_22: 1630076222422912583
+      animals_23: -1139288248276971085
+      animals_18: -2295827043839239567
+      animals_24: 4070187574600864207
+      animals_1: 5758861361426822821
+      animals_2: -1319315252296537693
+      animals_12: 110477935721402790
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
