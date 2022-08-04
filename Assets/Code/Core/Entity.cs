@@ -14,9 +14,19 @@ public class Entity : MonoBehaviour, IEntity
     public string Name { get; set; }
     public float Health { get; set; }
 
+    public Animator Animator { get; set; }
+
     private void Start()
     {
         Health = StartingHealth;
+        Animator = this.GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        // Temp
+        if(IsDead())
+            GameObject.Destroy(this.gameObject);
     }
 
     public bool IsDead()
@@ -31,6 +41,10 @@ public class Entity : MonoBehaviour, IEntity
     public bool Hit(float amount)
     {
         this.Health -= amount;
+
+        if (Animator != null)
+            Animator.Play("HitAnimation");
+
         return IsDead();
     }
 }

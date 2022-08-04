@@ -146,10 +146,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -188,6 +190,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1144,9 +1147,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      font_30: -4836960121619903016
+      font_12: -7624602737638586889
+      font_36: 8319599630124454179
+      font_7: -2432296197583570664
+      font_4: -1809877987737587854
+      font_27: -1020516230262658627
+      font_26: -8722637314202152839
+      font_23: 7814087314376559365
+      font_3: 3155708254655358991
+      font_38: 3460629101215251287
+      font_32: -1011159927129189223
+      font_2: -6630971469653654122
+      font_5: -8478194216507768359
+      font_20: -2743576862614557664
+      font_22: 8156438877833951428
+      font_37: 513192918839877092
+      font_18: -5962198388926122564
+      font_25: 7303193327651535916
+      font_10: 6348170711374592664
+      font_39: -8743923282464806245
+      font_14: -7318864361395112647
+      font_33: 5757750352503347483
+      font_17: -75143286191810230
+      font_0: -1401874176895988017
+      font_35: -8399110205408421858
+      font_15: 3830642159544845040
+      font_16: 3772937518185825702
+      font_1: -6787896269430008760
+      font_21: -5423386022696304102
+      font_8: 8988950123309387204
+      font_11: 1538424140462886368
+      font_40: -792220410938874319
+      font_9: -5733437377142980995
+      font_13: 6660220790318646868
+      font_31: 7650269062071469143
+      font_28: -8972199240296285320
+      font_41: 964083406343291134
+      font_24: -7269697945286533571
+      font_6: -239845697509426971
+      font_19: -5357453441090490021
+      font_29: -1796777426575798969
+      font_34: 3538517688748631324
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

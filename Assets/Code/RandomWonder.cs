@@ -10,7 +10,9 @@ public class RandomWonder : MonoBehaviour
 
     [Header("Avoidance Stats")]
     public float AvoidanceWeighting = 5;
-
+    public float PlayerAvoidanceDistance = 10f;
+    public float AnimalAvoidanceDistance = 4f;
+    public float EnemyAvoidanceDistance = 4f;
     private void Start()
     {
         _entity = GetComponent<Entity>();
@@ -36,6 +38,12 @@ public class RandomWonder : MonoBehaviour
             {
                 AvoidanceVector -= (entity.transform.position - this.transform.position).normalized /
                      Mathf.Pow(Vector3.Distance(entity.transform.position, this.transform.position), 1.5f);
+                count++;
+            }
+            else if (entity.CompareTag("Enemy") && Vector3.Distance(entity.transform.position, this.transform.position) < 10f)
+            {
+                AvoidanceVector -= (entity.transform.position - this.transform.position).normalized / 
+                     (Mathf.Pow(Vector3.Distance(entity.transform.position, this.transform.position),2.5f) );
                 count++;
             }
             else if (entity != _entity && Vector3.Distance(entity.transform.position, this.transform.position) < 4f)

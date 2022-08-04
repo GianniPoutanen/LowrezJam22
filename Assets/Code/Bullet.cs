@@ -14,7 +14,6 @@ public class Bullet : MonoBehaviour
     {
         this.transform.position = LittleMaths.ZeroZVector(this.transform.position);
         _direction = (LittleMaths.ZeroZVector(Camera.main.ScreenToWorldPoint(Input.mousePosition)) - this.transform.position).normalized;
-        Debug.Log(_direction);
 
         foreach (var renderer in SpriteRenderers)
         {
@@ -30,5 +29,15 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         this.transform.position += _direction * Time.deltaTime * Speed;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        var entity = collision.gameObject.GetComponent<Entity>();
+        if (entity != null)
+        {
+            collision.gameObject.GetComponent<Entity>().Hit(Damage);
+            GameObject.Destroy(this.gameObject);
+        }
     }
 }
