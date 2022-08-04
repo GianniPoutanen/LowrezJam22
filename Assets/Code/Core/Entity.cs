@@ -6,12 +6,12 @@ using UnityEngine;
 public class Entity : MonoBehaviour, IEntity
 {
     [Header("Stats")]
+    public string EntityName;
     public float MaxHealth = 5;
     public float StartingHealth = 5;
     public float Speed = 1;
 
     public Guid Id { get; private set; } = Guid.NewGuid();
-    public string Name { get; set; }
     public float Health { get; set; }
 
     public Animator Animator { get; set; }
@@ -25,7 +25,7 @@ public class Entity : MonoBehaviour, IEntity
     private void Update()
     {
         // Temp
-        if(IsDead())
+        if (IsDead())
             GameObject.Destroy(this.gameObject);
     }
 
@@ -43,7 +43,7 @@ public class Entity : MonoBehaviour, IEntity
         this.Health -= amount;
 
         if (Animator != null)
-            Animator.Play("HitAnimation");
+            Animator.Play(this.EntityName.ToLower() + "_dmg");
 
         return IsDead();
     }

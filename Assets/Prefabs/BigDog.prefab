@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 559980521558907006}
   - component: {fileID: 150754863788997010}
   m_Layer: 0
-  m_Name: IDFk
+  m_Name: BigDog
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a93815d1817f844aadb2122fc917df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EntityName: BigDog
   MaxHealth: 5
   StartingHealth: 5
   Speed: 1
