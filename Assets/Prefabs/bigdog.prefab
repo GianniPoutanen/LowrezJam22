@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 559980521558907006}
   - component: {fileID: 150754863788997010}
   m_Layer: 0
-  m_Name: IDFk
+  m_Name: bigdog
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
